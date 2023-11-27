@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+<body>
+    <div class="profile-container" id="profileContainer">
+        <h2>User Profile</h2>
+
+        <label for="name">Name:</label>
+        <p id="name">Pradeep</p>
+
+        <label for="dob">Date of Birth:</label>
+        <p id="dob">26-02-2003</p>
+
+        <label for="qualification">Highest Qualification:</label>
+        <p id="qualification">Bachelor's Degree</p>
+
+        <label for="email">Email:</label>
+        <p id="email">harry@gmail.com</p>
+
+        <label for="address">Address:</label>
+        <p id="address">123 Main St, trichy</p>
+
+        <label for="country">Country:</label>
+        <p id="country">India</p>
+
+        <label for="state">State:</label>
+        <p id="state">TamilNadu</p>
+
+        <button onclick="editProfile()">Edit</button>
+    </div>
+
+    <form class="profile-container edit-form" id="editForm">
+        <h2>Edit Profile</h2>
+
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="editName" required>
+
+        <label for="editDob">Date of Birth:</label>
+        <input type="date" id="editDob" name="editDob" required>
+
+        <label for="editQualification">Highest Qualification:</label>
+        <input type="text" id="editQualification" name="editQualification" required>
+
+        <label for="editEmail">Email:</label>
+        <input type="email" id="editEmail" name="editEmail" required>
+
+        <label for="editAddress">Address:</label>
+        <input type="text" id="editAddress" name="editAddress" required>
+
+        <label for="editCountry">Country:</label>
+        <input type="text" id="editCountry" name="editCountry" required>
+
+        <label for="editState">State:</label>
+        <input type="text" id="editState" name="editState" required>
+
+        <button type="submit">Save</button>
+        <button type="button" onclick="cancelEdit()">Cancel</button>
+    </form>
+
+
+</body>
+</html>
